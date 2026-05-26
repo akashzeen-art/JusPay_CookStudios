@@ -98,7 +98,7 @@ export default function Privacy() {
               <p className="mt-6">To make any such request, please contact us at:</p>
               <p className="mt-2">📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
               <p>📞 <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a></p>
-              <p>📍 NumeroMobile, 4th floor, Tower A1, SPAZE ITECH PARK, 417, Sector 49, Gurugram, Haryana 122018</p>
+              <p>📍 NumeroMobile, 417, Tower A1, Sector-49, Gurgaon, Haryana, 122011</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">10. Disclaimer</h2>
               <p>The content provided on this platform, including recipes, cooking videos, nutritional information, and related materials, is intended for general informational and educational purposes only. It is not a substitute for professional medical, dietary, or nutritional advice. Users are advised to consult a qualified healthcare professional or nutritionist regarding specific dietary needs, allergies, or medical conditions before following any recipes or meal plans.</p>

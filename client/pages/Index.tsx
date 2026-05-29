@@ -195,77 +195,59 @@ export default function Index() {
             {/* New Landscape Videos Grid */}
             {(() => {
               const newVideos = [
-                { title: "Diese alte mediterrane Suppe ist gesünder als viele moderne Rezepte", url: "https://vz-a2c5d962-9e6.b-cdn.net/8f33cced-89b6-424a-a3a6-03ae93d13134/play_360p.mp4" },
-                { title: "Cheesy Garlic Rolls 🧀🧄 Bake With Me", url: "https://vz-a2c5d962-9e6.b-cdn.net/935fac92-4d6f-42b2-9eff-e055f0f6e7e9/play_360p.mp4" },
-                { title: "Diese alte Suppe aus Polen ist gesünder als viele moderne Rezepte", url: "https://vz-a2c5d962-9e6.b-cdn.net/e1c7cde3-9a89-47ab-81fe-18edaa0b2bfd/play_360p.mp4" },
-                { title: "Diese einfache Suppe überrascht jeden! So lecker, dass alle nach dem Rezept fragen!", url: "https://vz-a2c5d962-9e6.b-cdn.net/2015929e-76be-4bdd-b7ea-6f1da818d1fc/play_360p.mp4" },
-                { title: "EASY Cheese Danish Recipe", url: "https://vz-a2c5d962-9e6.b-cdn.net/f070533e-5d59-424d-b0e2-76c660deac43/play_360p.mp4" },
-                { title: "Focaccia a la Pizza 👌 How to Bake the Best Focaccia Bread", url: "https://vz-a2c5d962-9e6.b-cdn.net/4a4b98f6-9214-4158-9127-e4e04964a3e7/play_360p.mp4" },
-                { title: "Golden Garlic Butter Potatoes", url: "https://vz-a2c5d962-9e6.b-cdn.net/0cac6663-931c-4704-b83d-4e298ced5818/play_360p.mp4" },
-                { title: "Diese Suppe hat mein Leben gerettet! Jetzt koche ich jeden Tag Gemüsesuppe!", url: "https://vz-a2c5d962-9e6.b-cdn.net/a8a1d291-4f50-4788-ba4b-a3fe163315b1/play_360p.mp4" },
-                { title: "Hast du eine Tasse Kichererbsen? Dann mach diese Bratlinge!", url: "https://vz-a2c5d962-9e6.b-cdn.net/7dfd460c-ffb2-427f-bf06-1f6301b1e57f/play_360p.mp4" },
-                { title: "Ich esse diese gesunden Pfannkuchen jeden Tag!", url: "https://vz-a2c5d962-9e6.b-cdn.net/3314795a-5f3e-454e-97df-1b6fb2adea62/play_360p.mp4" },
-                { title: "Mediterranean Chickpea Salad That Burns Belly Fat!", url: "https://vz-a2c5d962-9e6.b-cdn.net/a3064318-3245-4c70-b2c0-5784d34e34f1/play_360p.mp4" },
-                { title: "I've Been Doing This Almost Every Day Since I Learned From a 60 Year Old Master!", url: "https://vz-a2c5d962-9e6.b-cdn.net/0455543c-90bd-46ca-b1f2-11dd9756ed69/play_360p.mp4" },
-                { title: "One Bite & You're Hooked — Cheesy Ground Beef Casserole!", url: "https://vz-37338a02-bb9.b-cdn.net/6c399cdc-1600-4161-ab94-f974c2dd5702/play_480p.mp4" },
-                { title: "SERIOUSLY, I Could Eat This Ground Beef & Cabbage All Winter 🍲❄️", url: "https://vz-a2c5d962-9e6.b-cdn.net/89df6a73-f83f-46f1-9dcc-f86fcb0175ea/play_360p.mp4" },
-                { title: "The Healthiest Ever Mediterranean Pasta Salad — Easy & Delicious", url: "https://vz-a2c5d962-9e6.b-cdn.net/fe0dc2cd-1177-4b79-85d8-d7103bb193f9/play_360p.mp4" },
-                { title: "The Best Way To Make Sushi At Home", url: "https://vz-a2c5d962-9e6.b-cdn.net/0725a23f-7282-4315-8d94-928090d1843b/play_360p.mp4" },
-                { title: "STOP Making Boring Pasta — Saucy Chicken Fajita Version Is NEXT LEVEL 🔥", url: "https://vz-a2c5d962-9e6.b-cdn.net/2cf8ae76-d194-4d0e-a74c-6dc61a905c07/play_360p.mp4" },
-                { title: "The Only Salad I Can Eat Every Single Day", url: "https://vz-a2c5d962-9e6.b-cdn.net/0e69b816-b94a-4c2f-826b-1413ca9c3acd/play_360p.mp4" },
-                { title: "You've Never Eaten Potatoes Like This! The Perfect After-Work Recipe", url: "https://vz-a2c5d962-9e6.b-cdn.net/5dfd44ec-8dc0-4aa0-b9f4-48a0e9de3178/play_360p.mp4" },
-                { title: "This Dish Cleans Your Blood Vessels and Burns Fat Better", url: "https://vz-a2c5d962-9e6.b-cdn.net/a2dc236b-ddc1-4c45-aa47-20b6233946aa/play_360p.mp4" },
+                { title: "Mediterranean Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/8f33cced-89b6-424a-a3a6-03ae93d13134/play_360p.mp4" },
+                { title: "Cheesy Rolls", url: "https://vz-a2c5d962-9e6.b-cdn.net/935fac92-4d6f-42b2-9eff-e055f0f6e7e9/play_360p.mp4" },
+                { title: "Polish Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/e1c7cde3-9a89-47ab-81fe-18edaa0b2bfd/play_360p.mp4" },
+                { title: "Simple Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/2015929e-76be-4bdd-b7ea-6f1da818d1fc/play_360p.mp4" },
+                { title: "Cheese Danish", url: "https://vz-a2c5d962-9e6.b-cdn.net/f070533e-5d59-424d-b0e2-76c660deac43/play_360p.mp4" },
+                { title: "Focaccia Pizza", url: "https://vz-a2c5d962-9e6.b-cdn.net/4a4b98f6-9214-4158-9127-e4e04964a3e7/play_360p.mp4" },
+                { title: "Garlic Potatoes", url: "https://vz-a2c5d962-9e6.b-cdn.net/0cac6663-931c-4704-b83d-4e298ced5818/play_360p.mp4" },
+                { title: "Vegetable Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/a8a1d291-4f50-4788-ba4b-a3fe163315b1/play_360p.mp4" },
+                { title: "Chickpea Patties", url: "https://vz-a2c5d962-9e6.b-cdn.net/7dfd460c-ffb2-427f-bf06-1f6301b1e57f/play_360p.mp4" },
+                { title: "Healthy Pancakes", url: "https://vz-a2c5d962-9e6.b-cdn.net/3314795a-5f3e-454e-97df-1b6fb2adea62/play_360p.mp4" },
+                { title: "Chickpea Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/a3064318-3245-4c70-b2c0-5784d34e34f1/play_360p.mp4" },
+                { title: "Master Method", url: "https://vz-a2c5d962-9e6.b-cdn.net/0455543c-90bd-46ca-b1f2-11dd9756ed69/play_360p.mp4" },
+                { title: "Beef Casserole", url: "https://vz-37338a02-bb9.b-cdn.net/6c399cdc-1600-4161-ab94-f974c2dd5702/play_480p.mp4" },
+                { title: "Beef Cabbage", url: "https://vz-a2c5d962-9e6.b-cdn.net/89df6a73-f83f-46f1-9dcc-f86fcb0175ea/play_360p.mp4" },
+                { title: "Pasta Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/fe0dc2cd-1177-4b79-85d8-d7103bb193f9/play_360p.mp4" },
+                { title: "Homemade Sushi", url: "https://vz-a2c5d962-9e6.b-cdn.net/0725a23f-7282-4315-8d94-928090d1843b/play_360p.mp4" },
+                { title: "Fajita Pasta", url: "https://vz-a2c5d962-9e6.b-cdn.net/2cf8ae76-d194-4d0e-a74c-6dc61a905c07/play_360p.mp4" },
+                { title: "Daily Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/0e69b816-b94a-4c2f-826b-1413ca9c3acd/play_360p.mp4" },
+                { title: "Crispy Potatoes", url: "https://vz-a2c5d962-9e6.b-cdn.net/5dfd44ec-8dc0-4aa0-b9f4-48a0e9de3178/play_360p.mp4" },
+                { title: "Cleansing Dish", url: "https://vz-a2c5d962-9e6.b-cdn.net/a2dc236b-ddc1-4c45-aa47-20b6233946aa/play_360p.mp4" },
               ];
+              const card = (video: { title: string; url: string }, i: number) => (
+                <div
+                  key={i}
+                  onClick={() => openVideo(video.url, video.title)}
+                  className="cursor-pointer group rounded-xl overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md hover:border-white/40 transition-all duration-300"
+                >
+                  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                    <img
+                      src={`/NewLandscape/${i + 1}.png`}
+                      alt={video.title}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <p className="text-white/90 text-xs font-medium px-2 py-1.5 truncate leading-snug">{video.title}</p>
+                </div>
+              );
               return (
                 <div className="mt-12">
                   {/* Desktop: 4 col x 5 row */}
-                  <div className="hidden sm:grid grid-cols-4 gap-4">
-                    {newVideos.map((video, i) => (
-                      <div
-                        key={i}
-                        onClick={() => openVideo(video.url, video.title)}
-                        className="cursor-pointer group rounded-xl overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md hover:border-white/40 transition-all duration-300"
-                      >
-                        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                          <img
-                            src={`/NewLandscape/${i + 1}.png`}
-                            alt={video.title}
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                        <p className="text-white/90 text-xs font-medium px-2 py-1.5 line-clamp-2 leading-snug">{video.title}</p>
-                      </div>
-                    ))}
+                  <div
+                    className="hidden sm:grid gap-3"
+                    style={{ gridTemplateColumns: "repeat(4, 1fr)", gridTemplateRows: "repeat(5, auto)" }}
+                  >
+                    {newVideos.map((video, i) => card(video, i))}
                   </div>
 
-                  {/* Mobile: 2 rows x 10 cols horizontal scroll */}
-                  <div className="sm:hidden overflow-x-auto pb-3 -mx-4 px-4">
-                    <div
-                      style={{
-                        display: "grid",
-                        gridTemplateRows: "repeat(2, auto)",
-                        gridTemplateColumns: "repeat(10, 44vw)",
-                        gap: "12px",
-                        width: "max-content",
-                      }}
-                    >
-                      {newVideos.map((video, i) => (
-                        <div
-                          key={i}
-                          onClick={() => openVideo(video.url, video.title)}
-                          className="cursor-pointer group rounded-xl overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md"
-                        >
-                          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                            <img
-                              src={`/NewLandscape/${i + 1}.png`}
-                              alt={video.title}
-                              className="absolute inset-0 w-full h-full object-cover"
-                            />
-                          </div>
-                          <p className="text-white/90 text-xs font-medium px-2 py-1.5 line-clamp-2 leading-snug">{video.title}</p>
-                        </div>
-                      ))}
-                    </div>
+                  {/* Mobile: 2 col x 10 row */}
+                  <div
+                    className="sm:hidden grid gap-3"
+                    style={{ gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: "repeat(10, auto)" }}
+                  >
+                    {newVideos.map((video, i) => card(video, i))}
                   </div>
                 </div>
               );
